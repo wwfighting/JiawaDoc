@@ -33,24 +33,24 @@ POST
 
 | 返回值字段 | 字段类型  | 字段说明  |
 | ---------  |:---------:| ---------:|
-| code       | String    | login     |
-| info       | String    | 用户账号  |
-| id         | String    | 登录密码  |
-| username   | String    | 登录密码  |
-| nickname        | String    | 登录密码  |
-| password        | String    | 登录密码  |
-| phone        | String    | 登录密码  |
-| wx_openid       | String    | 登录密码  |
-| status        | String    | 登录密码  |
-| createtime   | String    | 登录密码  |
-| headImg | String    | 登录密码  |
-| area | String    | 登录密码  |
-| credit| String    | 登录密码  |
-| lasttime | String    | 登录密码  |
-| num | String    | 登录密码  |
-| auth_key | String    | 登录密码  |
-| updated_at | String    | 登录密码  |
-| email | String    | 登录密码  |
+| code       | String    | 200:成功 400：失败     |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息  |
+| id         | int       | 用户id |
+| username   | String    | 用户名 |
+| nickname   | String    | 用户昵称  |
+| password   | String    | 用户密码  |
+| phone      | String    | 手机号  |
+| wx_openid  | String    |微信openid  |
+| status     | int       | 状态 0：屏蔽 1：正常  |
+| createtime | String    | 创建时间  |
+| headImg    | String    | 头像 目前默认为微信头像  |
+| area       | String    | 用户所在地  |
+| credit     | int       | 用户积分  |
+| lasttime   | String    | 上次登录时间  |
+| num        | int       | ""  |
+| auth_key   | String    | 登录密码  |
+| updated_at | String    | 更新时间  |
+| email      | String    | 邮箱  |
 
 
 
