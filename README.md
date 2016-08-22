@@ -35,14 +35,22 @@ POST
 | ---------  |:---------:| ---------:|
 | code       | String    | login     |
 | info       | String    | 用户账号  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  |
-|  id        | String    | 登录密码  ||  id        | String    | 登录密码  ||  id        | String    | 登录密码  |
+| id         | String    | 登录密码  |
+| username   | String    | 登录密码  |
+| nickname        | String    | 登录密码  |
+| password        | String    | 登录密码  |
+| phone        | String    | 登录密码  |
+| wx_openid       | String    | 登录密码  |
+| status        | String    | 登录密码  |
+| createtime   | String    | 登录密码  |
+| headImg | String    | 登录密码  |
+| area | String    | 登录密码  |
+| credit| String    | 登录密码  |
+| lasttime | String    | 登录密码  |
+| num | String    | 登录密码  |
+| auth_key | String    | 登录密码  |
+| updated_at | String    | 登录密码  |
+| email | String    | 登录密码  |
 
 
 
