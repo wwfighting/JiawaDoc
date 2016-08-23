@@ -5,20 +5,19 @@
 1. 用户登录
 
 **URL:**
-http://192.168.1.54/DEMO/demo/test.php
+http://192.168.1.54/DEMO/demo/login.php
 
 **HTTP请求方式**
 POST
 
 **请求参数**
 
-{"action":"login","username":"8990","password":"******"}
+{"username":"8990","password":"******"}
 
 **请求字段说明**
 
 | 请求字段 | 字段类型  | 字段说明  |
 | ---------|:---------:| ---------:|
-| action   | String    | login     |
 | username | String    | 用户账号  |
 | password | String    | 登录密码  |
 
