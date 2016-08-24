@@ -34,7 +34,7 @@ POST
 
 **返回结果**
 
-        {"code":"400","info":"error","data":""}  <br />
+        {"code":"400","info":"error","data":""} 
 
         {
           "code":"200",
@@ -104,7 +104,7 @@ POST
 
 **返回结果**
 
-        {"code":"400","info":"error","data":""}  <br />
+        {"code":"400","info":"error","data":""}
         
         {
           "code": "200",
@@ -176,7 +176,7 @@ POST
 
 **返回结果**
 
-        {"code":"400","info":"error","data":""}  <br />
+        {"code":"400","info":"error","data":""} 
         
         {
           "code":"200",
