@@ -18,7 +18,7 @@
 ## 1.用户登录
 
 **URL:**
-http://192.168.1.54/DEMO/demo/login.php
+http://192.168.1.54/test/jvawa/login.php
 
 **HTTP请求方式**
 POST
@@ -88,7 +88,7 @@ POST
 
 **URL:**
 
-http://192.168.1.54/DEMO/demo/index_banner.php
+http://192.168.1.54/test/jvawa/index_banner.php
 
 **HTTP请求方式**
 
@@ -160,7 +160,7 @@ POST
 
 **URL:**
 
-http://192.168.1.54/DEMO/demo/index_goods.php
+http://192.168.1.54/test/jvawa/index_goods.php
 
 **HTTP请求方式**
 
