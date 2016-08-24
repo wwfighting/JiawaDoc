@@ -3,6 +3,16 @@
 
 ***
 
+##图片地址说明
+
+返回的图片地址 imgurl 为 "uploads/1464942882.jpg" </br>
+
+客户端需要在前加上"http://www.jvawa.com/" 进行拼接</br>
+
+最终的图片访问地址为 "http://www.jvawa.com/uploads/1464942882.jpg"
+
+***
+
 ## 1.用户登录
 
 **URL:**
@@ -103,7 +113,7 @@ POST
             {
             "id": "27",
             "type": "1",
-            "imgurl": "http://www.jvawa.com/uploads/1461914226.jpg",
+            "imgurl": "uploads/1461914226.jpg",
             "href": "productDetical.php?id=3234",
             "sort": "-1",
             "status": "1",
@@ -112,7 +122,7 @@ POST
             {
             "id": "29",
             "type": "1",
-            "imgurl": "http://www.jvawa.com/uploads/1464942882.jpg",
+            "imgurl": "uploads/1464942882.jpg",
             "href": "http://www.jvawa.com/new/game/AprilSpecial/special.php",
             "sort": "1",
             "status": "1",
@@ -177,7 +187,8 @@ POST
               "id":"2896",
               "goodsno":"2015CG.01.01.01.001",
               "goodsname":"\u5c0f\u5eb7\u7f8e\u53a8",
-              "subtitle":"\u5206\u7c7b","picurl":"uploads/1443078651.jpg;uploads/1443078666.jpg",
+              "subtitle":"\u5206\u7c7b",
+              "picurl":"uploads/1443078651.jpg;uploads/1443078666.jpg",
               "price":"6999",
               "classifyid":"3",
               "goodsdesc":"",
@@ -237,20 +248,44 @@ POST
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
-| id       | String    | 200：成功 400：失败 |
-| goodsno       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
-| goodsname         | int       | bannerid |
-| subtitle       | int       | 位置 0 首页 1 |
-| picurl      | String    | 标题 |
-| price     | String    | banner广告图片地址 |
-| classifyid  | String    | 图片点击跳转地址 |
-| goodsdesc       | int       | 排序 |
-| isrecom     | int       | "" |
-| buylimit | String    | 创建时间 |
-| buylimit | String    | 创建时间 |
-| buylimit | String    | 创建时间 |
-| buylimit | String    | 创建时间 |
-| buylimit | String    | 创建时间 |
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| id         | int    | 商品id |
+| goodsno       | int    | 商品编号 |
+| goodsname         | int       | 商品标题 |
+| subtitle       | String       | 子标题 |
+| picurl      | String    | 图片地址，多个以引文分号隔开 |
+| price     | double    | 商品价格 |
+| classifyid  | int    | 分类id |
+| goodsdesc       | text       | 商品描述 |
+| isrecom     | int       | 是否推荐 0 不推荐 1 推荐 |
+| buylimit | String    | 0：不限制 其他：限购数量 |
+| tag | String    | 标签 |
+| brandsid | int    | 品牌id |
+| status  | int    | 状态 0 下架 1 上架 2 逻辑删除 3 待审核 4审核不通过 |
+| createtime | String    | 创建时间 |
+| updatetime | String    | 修改时间 |
+| ordercount | int    | 预约数 |
+| unit | String    | 商品单位 |
+| recomtype | int    | 推荐类型 0 自动 1手动 |
+| recomgoods | String    | 推荐的商品id，以英文逗号隔开（recomtype为1时有效） |
+| adminid | int    | 发布者用户id |
+| type | int    | 商品来源 0 自营 1供货商 |
+| reviewmark | String    | 审核备注 |
+| stock | int    | 库存 |
+| guige | String    | 导购 |
+| price_old | int    | 原价 |
+| price1 | double    | 现价1 |
+| price_old1 | double   | 原价1 |
+| standard_fittings_id | int    | " |
+
+***
+
+
+
+
+
+
 
 
 
