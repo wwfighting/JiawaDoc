@@ -27,7 +27,7 @@ POST
 
 * **请求参数**
 
-                                {"username":"8990","password":"******"}
+        {"username":"8990","password":"******"}
 
 * **请求字段说明**
 
@@ -98,7 +98,7 @@ POST
 
 * **请求参数**
 
-{"status":"1"}
+        {"status":"1"}
 
 * **请求字段说明**
 
@@ -163,7 +163,7 @@ POST
 
 * **URL:**
 
- http://192.168.1.54/test/jvawa/index_goods.php
+http://192.168.1.54/test/jvawa/index_goods.php
 
 * **HTTP请求方式**
 
@@ -171,7 +171,7 @@ POST
 
 * **请求参数**
 
-{"isrecom":"1"}
+        {"isrecom":"1"}
 
 * **请求字段说明**
 
@@ -298,7 +298,7 @@ POST
 
 * **请求参数**
 
-{"phoneNum":"13770936421"}
+        {"phoneNum":"13770936421"}
 
 * **请求字段说明**
 
@@ -330,7 +330,7 @@ POST
 
 * **请求参数**
 
-{"phoneNum":"13770936421"}
+        {"phoneNum":"13770936421"}
 
 * **请求字段说明**
 
@@ -362,7 +362,7 @@ POST
 
 * **请求参数**
 
-{"phoneNum":"13770936421","identifyCode":"5565","password":"******"}
+        {"phoneNum":"13770936421","identifyCode":"5565","password":"******"}
 
 * **请求字段说明**
 
