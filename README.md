@@ -24,12 +24,31 @@ POST
 
 **返回结果**
 
-{"code":"400","info":"失败","data":""}  <br />
+        {"code":"400","info":"error","data":""}  <br />
 
-{"code":"200","info":"成功",
-  "data":{"id":"139","username":"8990","nickname":"俞妃","password":"757575","phone":"15358106068","wx_openid":"o78U2v6Zh5RtUjIJwKPZFYYKMWnI","status":"100","createtime":"2015-09-2701:21:34","headImg":"http://wx.qlogo.cn/mmopen/ajNVdqHZLLAq8171DGiaEfaHdPDetF5XavppaYOicZ7r1mPHNhnkVlZfw4pcsLdAEkjwWsSjJvPuVXoA6rAHEHibw/0",
-  "area":"","credit":"1","lasttime":"2016-05-30 12:52:27","num":"50","auth_key":null,"updated_at":null,"email":"null"}
-}
+        {
+          "code":"200",
+          "info":"success",
+          "data":
+            {
+            "id":"139",
+            "username":"8990",
+            "nickname":"俞妃",
+            "password":"757575",
+            "phone":"15358106068",
+            "wx_openid":"o78U2v6Zh5RtUjIJwKPZFYYKMWnI",
+            "status":"100",
+            "createtime":"2015-09-2701:21:34",
+            "headImg":"http://wx.qlogo.cn/mmopen/ajNVdqHZLLAq8171DGiaEfaHdPDetF5XavppaYOicZ7r1mPHNhnkVlZfw4pcsLdAEkjwWsSjJvPuVXoA6rAHEHibw/0",
+            "area":"",
+            "credit":"1",
+            "lasttime":"2016-05-30 12:52:27",
+            "num":"50",
+            "auth_key":null,
+            "updated_at":null,
+            "email":"null"
+            }
+        }
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -75,6 +94,8 @@ POST
 
 **返回结果**
 
+        {"code":"400","info":"error","data":""}  <br />
+        
         {
           "code": "200",
           "info": "success",
@@ -109,9 +130,127 @@ POST
           ]
         }
 
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| id         | int       | bannerid |
+| type       | int       | 位置 0 首页 1 |
+| title      | String    | 标题 |
+| imgurl     | String    | banner广告图片地址 |
+| href       | String    | 图片点击跳转地址 |
+| sort       | int       | 排序 |
+| status     | int       | "" |
+| createtime | String    | 创建时间 |
 
+***
+## 3.首页商品（新品推荐，热门商品）
 
+**URL:**
 
+http://192.168.1.54/DEMO/demo/index_goods.php
+
+**HTTP请求方式**
+
+POST
+
+**请求参数**
+
+{"isrecom":"1"}
+
+**请求字段说明**
+
+| 请求字段 | 字段类型  | 字段说明  |
+|:--------:|:---------:|:---------:|
+| isrecom  | String    |是否推荐，0：不推荐 1：新品推荐 2：热门商品|
+
+**返回结果**
+
+        {"code":"400","info":"error","data":""}  <br />
+        
+        {
+          "code":"200",
+          "info":"success",
+          "data":
+          [
+            {
+              "id":"2896",
+              "goodsno":"2015CG.01.01.01.001",
+              "goodsname":"\u5c0f\u5eb7\u7f8e\u53a8",
+              "subtitle":"\u5206\u7c7b","picurl":"uploads/1443078651.jpg;uploads/1443078666.jpg",
+              "price":"6999",
+              "classifyid":"3",
+              "goodsdesc":"",
+              "isrecom":"1",
+              "buylimit":"6",
+              "tag":"\u96d5\u523b\u65f6\u5149A;15,17,18,19,20;4",
+              "brandsid":"5",
+              "status":"1",
+              "createtime":"2015-10-10 17:14:56",
+              "updatetime":"2016-03-2408:51:22",
+              "ordercount":"18",
+              "unit":"\u7c73",
+              "recomtype":"0",
+              "recomgoods":"",
+              "adminid":"1",
+              "type":"0",
+              "reviewmark":"pass",
+              "stock":"22",
+              "guige":"3-10\u7c73\u5730\u67dc + 3-10\u7c73\u53f0\u9762 + 1-5\u7c73\u540a\u67dc",
+              "price_old":"13996",
+              "price1":"24999",
+              "price_old1":"49996",
+              "standard_fittings_id":"1"
+            },
+            {
+              "id":"2897",
+              "goodsno":"2015CG.03.01.01.001",
+              "goodsname":"\u7cbe\u82f1\u60a6\u53a8",
+              "subtitle":"\u5206\u7c7b",
+              "picurl":"uploads/1443142494.jpg;uploads/1443142502.jpg;uploads/1443142512.jpg",
+              "price":"10999",
+              "classifyid":"5",
+              "goodsdesc":"",
+              "isrecom":"1",
+              "buylimit":"6",
+              "tag":"\u8fc8\u68eeB,\u7b80\u7231A,\u4e1d\u4e3d\u5361B,\u4e1d\u4e3d\u5361C,\u7eb8\u724c\u5c4b,\u632a\u5a01\u6d77\u5cb8;15,17,18,19,20;4,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,80,",
+              "brandsid":"5",
+              "status":"1",
+              "createtime":"2015-10-10 17:16:24",
+              "updatetime":"2016-03-24 09:03:34",
+              "ordercount":"15",
+              "unit":"\u7c73",
+              "recomtype":"0",
+              "recomgoods":"",
+              "adminid":"1",
+              "type":"0",
+              "reviewmark":"pass",
+              "stock":"18",
+              "guige":"3-10\u7c73\u5730\u67dc + 3-10\u7c73\u53f0\u9762 + 1-5\u7c73\u540a\u67dc",
+              "price_old":"20996",
+              "price1":"28999",
+              "price_old1":"74985",
+              "standard_fittings_id":"1"
+            }
+          ]
+        }
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| id       | String    | 200：成功 400：失败 |
+| goodsno       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| goodsname         | int       | bannerid |
+| subtitle       | int       | 位置 0 首页 1 |
+| picurl      | String    | 标题 |
+| price     | String    | banner广告图片地址 |
+| classifyid  | String    | 图片点击跳转地址 |
+| goodsdesc       | int       | 排序 |
+| isrecom     | int       | "" |
+| buylimit | String    | 创建时间 |
+| buylimit | String    | 创建时间 |
+| buylimit | String    | 创建时间 |
+| buylimit | String    | 创建时间 |
+| buylimit | String    | 创建时间 |
 
 
 
