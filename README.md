@@ -18,15 +18,16 @@
 ## 2.用户登录
 
 * **URL:**
- http://192.168.1.54/test/jvawa/login.php
+
+http://192.168.1.54/test/jvawa/login.php
 
 * **HTTP请求方式**
-  </br>
+
 POST
 
 * **请求参数**
 
- {"username":"8990","password":"******"}
+{"username":"8990","password":"******"}
 
 * **请求字段说明**
 
