@@ -27,7 +27,7 @@ POST
 
 * **请求参数**
 
-{"username":"8990","password":"******"}
+                                {"username":"8990","password":"******"}
 
 * **请求字段说明**
 
