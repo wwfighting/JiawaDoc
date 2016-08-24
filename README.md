@@ -53,8 +53,61 @@ POST
 | email      | String    | 邮箱  |
 
 ***
+## 2.首页Banner
 
+**URL:**
 
+http://192.168.1.54/DEMO/demo/index_banner.php
+
+**HTTP请求方式**
+
+POST
+
+**请求参数**
+
+{"status":"1"}
+
+**请求字段说明**
+
+| 请求字段 | 字段类型  | 字段说明  |
+|:--------:|:---------:|:---------:|
+| status   | String    |  暂无     |
+
+**返回结果**
+
+        {
+          "code": "200",
+          "info": "success",
+          "data": [
+            {
+            "id": "27",
+            "type": "1",
+            "imgurl": "http://www.jvawa.com/uploads/1461914226.jpg",
+            "href": "productDetical.php?id=3234",
+            "sort": "-1",
+            "status": "1",
+            "createtime": "2016-04-29 15:19:01"
+            },
+            {
+            "id": "29",
+            "type": "1",
+            "imgurl": "http://www.jvawa.com/uploads/1464942882.jpg",
+            "href": "http://www.jvawa.com/new/game/AprilSpecial/special.php",
+            "sort": "1",
+            "status": "1",
+            "createtime": "2016-06-03 16:22:32"
+            },
+            {
+            "id": "30",
+            "type": "1",
+            "imgurl": "http://www.jvawa.com/uploads/1466997596.png",
+            "href": "peijianDetical.php?id=3475",
+            "sort": "-1",
+            "status": "1",
+            "createtime": "2016-06-27 11:04:31"
+            }
+          ]
+        }
 
 
 
