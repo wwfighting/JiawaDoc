@@ -5,11 +5,13 @@
 
 ##图片地址说明
 
-返回的图片地址 imgurl 为 "uploads/1464942882.jpg" </br>
+返回的图片地址 imgurl 为 "uploads/********.jpg" 形式</br>
 
 客户端需要在前加上"http://www.jvawa.com/" 进行拼接</br>
 
-最终的图片访问地址为 "http://www.jvawa.com/uploads/1464942882.jpg"
+最终的图片访问地址为 "http://www.jvawa.com/uploads/********.jpg" 形式</br>
+
+例如："http://www.jvawa.com/uploads/1464942882.jpg"
 
 ***
 
