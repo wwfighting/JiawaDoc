@@ -412,7 +412,7 @@ POST
         {"code":"400","info":"error","data":""}
         {
           code: "200",
-          info: "7",
+          info: "success",
           data:
           [
             {
