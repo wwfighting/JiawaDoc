@@ -484,7 +484,8 @@ POST
 | code       | String    | 200：成功 400：失败 |
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | id         | int    | 商品id |
-| goodsname         | int       | 商品标题 |
+| picurl      | String    | 图片地址，多个以引文分号隔开 |
+| goodsname         | String       | 商品标题 |
 | myordercount      | int    | 预约数 |
 | mycommentcount    | int    | 评论数 |
 
