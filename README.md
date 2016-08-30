@@ -600,7 +600,7 @@ POST
 |:--------:|:---------:|:---------:|
 | uid      | String    | 用户ID |
 | gid      | String    | 商品ID |
-| action   | String    | num：返回购物车中个数 add：添加到购物车 |
+| action   | String    | num：获得购物车中商品个数 add：添加到购物车 |
 
 * **返回结果**
 
