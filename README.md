@@ -475,3 +475,90 @@ POST
 | goodsname         | int       | 商品标题 |
 | myordercount      | int    | 预约数 |
 | mycommentcount    | int    | 评论数 |
+
+***
+
+## 9.商品详细
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/product_detail.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"gid":"2789"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| gid      | String    | 商品ID |
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        {
+          "code":"200",
+          "info":"success",
+          "data":
+            {
+              "detail":
+                {
+                  "gid":"2869",
+                  "goodsname":"\u5c0f\u5eb7\u7f8e\u53a8_\u96d5\u523b\u65f6\u5149A",
+                  "picurl":"uploads/1449650214.PNG;uploads/1449650223.PNG",
+                  "goodsdesc":"<imgsrc=\"http://www.jvawa.com/uploads/1444891999.jpg\"><imgsrc=\"http://www.jvawa.com/uploads/1444892003.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892008.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892014.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892019.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892023.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892035.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892039.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892042.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892047.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892050.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892054.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892059.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892064.jpg\">",
+                  "subtitle":"",
+                  "price_old":"13996",
+                  "price":"6999",
+                  "price_old1":"49996",
+                  "price1":"24999",
+                  "guide":"3-10\u7c73\u5730\u67dc + 3-10\u7c73\u53f0\u9762 + 1-5\u7c73\u540a\u67dc",
+                  "tag":"\u96d5\u523b\u65f6\u5149A;15,17,18,19,20;4",
+                  "ordermoney":2000,"ordercount":121
+                },
+              "colors":
+                {
+                  "cid":"103",
+                  "cname":"\u96c5\u9ec4\u6989\u6728MFC-5002",
+                  "color":"\u96d5\u523b\u65f6\u5149A",
+                  "cpath":"uploads/1459308948.png"
+                },
+              "taimian":
+                {
+                  "tid":"20",
+                  "tname":"OLO-8892\u5361\u74e6\u77f3",
+                  "mode":"uploads/1459310655.png",
+                  "tpath":null
+                }
+            }
+        }
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为商品列表中商品的个数，为400时显示内容为错误信息 |
+| gid        | int    | 商品id |
+| goodsname         | String    | 商品标题 |
+| picurl      | String    | 图片地址，多个以引文分号隔开 |
+| goodsdesc    | text    | 商品描述 |
+| subtitle    | String    | 副标题 |
+| guige | String    | 导购 |
+| price_old | int    | 原价 |
+| price1 | double    | 现价1 |
+| price_old1 | double   | 原价1 |
+| tag | String    | 标签 |
+| ordermoney    | String  | 预约金额 |
+| ordercount    | String  | 预约数 |
+| cid    | String    | 颜色ID |
+| cname    | String    | 颜色名称 |
+| color    | String    | 商品颜色 |
+| cpath    | String    | 颜色图片地池 |
+| tid    | String    | 台面ID |
+| tname    | String    | 台面名称 |
+| mode    | String    | 台面模式 |
+| tpath    | text    | 台面图片地址 |
