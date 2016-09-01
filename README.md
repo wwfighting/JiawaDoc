@@ -514,41 +514,81 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
+        
         {
-          "code":"200",
-          "info":"success",
-          "data":
-            {
-              "detail":
+           "code":"200",
+           "info":"success",
+           "data":
                 {
-                  "gid":"2869",
-                  "goodsname":"\u5c0f\u5eb7\u7f8e\u53a8_\u96d5\u523b\u65f6\u5149A",
-                  "picurl":"uploads/1449650214.PNG;uploads/1449650223.PNG",
-                  "goodsdesc":"<imgsrc=\"http://www.jvawa.com/uploads/1444891999.jpg\"><imgsrc=\"http://www.jvawa.com/uploads/1444892003.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892008.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892014.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892019.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892023.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892035.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892039.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892042.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892047.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892050.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892054.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892059.jpg\"><img src=\"http://www.jvawa.com/uploads/1444892064.jpg\">",
+                 "detail":
+                 {
+                  "gid":"3235",
+                  "goodsname":"\u7cbe\u82f1\u60a6\u53a8_\u4e1d\u4e3d\u5361B",
+                  "picurl":"uploads/1449556706.PNG;uploads/1449556714.PNG;uploads/1449556720.PNG",
+                  "goodsdesc":"<img src=\"http://www.jvawa.com/uploads/1444889539.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889554.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889561.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889565.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889572.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889579.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889582.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889589.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889597.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889601.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889606.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889609.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889614.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889618.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889622.jpg\"><img src=\"http://www.jvawa.com/uploads/1444889626.jpg\">",
                   "subtitle":"",
-                  "price_old":"13996",
-                  "price":"6999",
-                  "price_old1":"49996",
-                  "price1":"24999",
+                  "price_old":"20996",
+                  "price":"10999",
+                  "price_old1":"74985","price1":"28999",
                   "guide":"3-10\u7c73\u5730\u67dc + 3-10\u7c73\u53f0\u9762 + 1-5\u7c73\u540a\u67dc",
-                  "tag":"\u96d5\u523b\u65f6\u5149A;15,17,18,19,20;4",
+                  "tag":"\u4e1d\u4e3d\u5361B;15,17,18,19,20;4,6,19,20,22,23,84",
                   "ordermoney":2000,"ordercount":121
-                },
-              "colors":
-                {
-                  "cid":"103",
-                  "cname":"\u96c5\u9ec4\u6989\u6728MFC-5002",
-                  "color":"\u96d5\u523b\u65f6\u5149A",
-                  "cpath":"uploads/1459308948.png"
-                },
-              "taimian":
-                {
-                  "tid":"20",
-                  "tname":"OLO-8892\u5361\u74e6\u77f3",
-                  "mode":"uploads/1459310655.png",
-                  "tpath":null
+                  },
+                 "colors":
+                  [
+                    {
+                     "cid":"46",
+                     "cname":"\u51e0\u4f55\u767dPVCD-0905",
+                     "color":"\u4e1d\u4e3d\u5361B",
+                     "cpath":"uploads/1444639102.png"
+                     },
+                     {
+                      "cid":"47",
+                      "cname":"\u51e0\u4f55\u9ed1PVCD-0905-1",
+                      "color":"\u4e1d\u4e3d\u5361B",
+                      "cpath":"uploads/1444639114.png"
+                     },
+                     {
+                      "cid":"48",
+                      "cname":"\u5e15\u91cc\u65afPVCD-0860-2",
+                      "color":"\u4e1d\u4e3d\u5361B",
+                      "cpath":"uploads/1444639127.png"
+                      }
+                   ],
+                 "taimian":
+                   [
+                     {
+                      "tid":"15",
+                      "tname":"OLO-8886\u7389\u73ca\u745a",
+                      "mode":"1459310048.png",
+                      "tpath":"uploads/"
+                      },
+                      {
+                       "tid":"17",
+                       "tname":"OLO-8890-T\u5929\u5e55\u767d",
+                       "mode":"1459310088.png",
+                       "tpath":"uploads/"
+                       },
+                       {
+                        "tid":"18",
+                        "tname":"OLO-8893\u9713\u77f3\u970f",
+                        "mode":"1459310104.png",
+                        "tpath":"uploads/"
+                        },
+                        {
+                         "tid":"19",
+                         "tname":"OLO-8918\u5361\u666e\u8d5b\u8bfa",
+                         "mode":"1459310124.png",
+                         "tpath":"uploads/"
+                         },
+                        {
+                         "tid":"20",
+                         "tname":"OLO-8892\u5361\u74e6\u77f3",
+                         "mode":"1459310655.png",
+                         "tpath":"uploads/"
+                         }
+                   ]
                 }
-            }
         }
 
 * **返回字段说明**
@@ -572,7 +612,7 @@ POST
 | cid    | String    | 颜色ID |
 | cname    | String    | 颜色名称 |
 | color    | String    | 商品颜色 |
-| cpath    | String    | 颜色图片地池 |
+| cpath    | String    | 颜色图片地址 |
 | tid    | String    | 台面ID |
 | tname    | String    | 台面名称 |
 | mode    | String    | 台面模式 |
