@@ -580,14 +580,24 @@ POST
                          "tname":"OLO-8918\u5361\u666e\u8d5b\u8bfa",
                          "mode":"1459310124.png",
                          "tpath":"uploads/"
-                         },
+                        },
                         {
                          "tid":"20",
                          "tname":"OLO-8892\u5361\u74e6\u77f3",
                          "mode":"1459310655.png",
                          "tpath":"uploads/"
-                         }
-                   ]
+                        }
+                   ],
+                   "door":
+                   [
+                       {
+                         "did":"3235",
+                         "dname":"2015CG.03.01.04.001",
+                         "dpath":"uploads/\u7cbe\u82f1\u60a6\u53a8_\u4e1d\u4e3d\u5361B",
+                         "mode":"纸牌屋、简爱",
+                         "price":"759"
+                        }
+                    ]
                 }
         }
 
@@ -617,6 +627,11 @@ POST
 | tname    | String    | 台面名称 |
 | mode    | String    | 台面模式 |
 | tpath    | text    | 台面图片地址 |
+| did    | String    | 门ID |
+| dname    | String    | 门名称 |
+| dpath    | String    | 门图片地址 |
+| price    | String    | 门价格 |
+| mode    | String    | 门模式 |
 
 ***
 
