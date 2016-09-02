@@ -591,11 +591,11 @@ POST
                    "door":
                    [
                        {
-                         "did":"3235",
-                         "dname":"2015CG.03.01.04.001",
-                         "dpath":"uploads/\u7cbe\u82f1\u60a6\u53a8_\u4e1d\u4e3d\u5361B",
-                         "mode":"纸牌屋、简爱",
-                         "price":"759"
+                         "did":"84",
+                         "dname":"L10",
+                         "dpath":"uploads/1459317103.png",
+                         "price":594,
+                         "mode":"纸牌屋、简爱"
                         }
                     ]
                 }
