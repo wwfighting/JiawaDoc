@@ -378,7 +378,7 @@ POST
 |:--------:|:---------:|:---------:|
 | phoneNum | String    |手机号     |
 | identifyCode | String    |验证码     |
-| password | String    |手机号     |
+| password | String    |密码     |
 
 * **返回结果**
 
