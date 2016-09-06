@@ -764,7 +764,199 @@ POST
 | address       | String    | 收货人地址 |
 | createtime       | String    | 该信息创建时间 |
 
+***
 
+## 13.获取门店相关信息(门店)
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/get_store_info.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"cityName":"南京", "storeName":"南京公司光华门店", "action":"store"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:---------:|:----------:|:---------:|
+| cityName  | String    | 城市名 |
+| storeName | String    | 门店名 |
+| action    | String    | 获取数据的对象 store：门店信息 staff：门店员工信息 |
+
+* **返回字段说明**
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {
+         code: "200",
+         info: "success",
+         data: 
+         [
+          {
+           storeId: "629",
+           city: "南京",
+           trueName: "王庆霞",
+           phone: "15062285736",
+           address: "白下区光华路2号石林家居广场10号",
+           storeName: "南京公司光华门店",
+           userType: "2",
+           salerno: "NJ214"
+          },
+          {
+           storeId: "242",
+           city: "南京",
+           trueName: "田艳",
+           phone: "15358106566",
+           address: "雨花区卡子门大街88号石林家乐家",
+           storeName: "南京公司家乐家店",
+           userType: "2",
+           salerno: "NJ155"
+          },
+          {
+           storeId: "540",
+           city: "南京",
+           trueName: "王静",
+           phone: "15358106880",
+           address: "大桥北路48号弘阳广场弘阳家居A2馆2315号",
+           storeName: "南京公司桥北店",
+           userType: "2",
+           salerno: "NJ150"
+          },
+          {
+           storeId: "119",
+           city: "南京",
+           trueName: "经芳",
+           phone: "15358106759",
+           address: "雨花区卡子门红星美凯龙负一楼F8381号",
+           storeName: "南京公司红星店",
+           userType: "2",
+           salerno: "NJ020"
+          },
+          {
+           storeId: "635",
+           city: "南京",
+           trueName: "李青青",
+           phone: "13914485566",
+           address: "快特兰汀家居有限公司",
+           storeName: "南京公司达美店",
+           userType: "2",
+           salerno: "NJ205"
+          },
+          {
+           storeId: "185",
+           city: "南京",
+           trueName: "陈君",
+           phone: "15358106127",
+           address: "江宁区东山镇金宝装饰城精品洁具地板厅2号",
+           storeName: "南京公司金宝店",
+           userType: "2",
+           salerno: "NJ101"
+          },
+          {
+           storeId: "108",
+           city: "南京",
+           trueName: "徐云",
+           phone: "15358106312",
+           address: "建邺区江东中路80号-1楼B21-23号",
+           storeName: "南京公司金盛店",
+           userType: "2",
+           salerno: "NJ008"
+          }
+         ]
+        }
+        
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| storeId       | String    | 门店id |
+| city       | String    | 城市 |
+| truename      | String    | 真实姓名 |
+| phone       | String    | 门店手机号 |
+| address       | String    | 门店地址 |
+| storeName       | String    | 门店名 |
+| userType       | String    | 0：超级管理员 1：门店管理员 2：门店店员 3：生产商 4:门店设计师 |
+| salerno       | String    | 门店店员工号 |
+
+***
+
+## 14.获取门店员工相关信息(门店员工)
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/get_store_info.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"cityName":"南京", "storeName":"南京公司光华门店", "action":"staff"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:---------:|:----------:|:---------:|
+| cityName  | String    | 城市名 |
+| storeName | String    | 门店名 |
+| action    | String    | 获取数据的对象 store：门店信息 staff：门店员工信息 |
+
+* **返回字段说明**
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {
+         code: "200",
+         info: "success",
+         data: 
+         [
+          {
+           salerno: "NJ023",
+           truename: "李兰兰",
+           storeId: "122",
+           storeName: "南京公司光华门店"
+          },
+          {
+           salerno: "NJ214",
+           truename: "王庆霞",
+           storeId: "629",
+           storeName: "南京公司光华门店"
+          },
+          {
+           salerno: "NJ213",
+           truename: "杨向北",
+           storeId: "628",
+           storeName: "南京公司光华门店"
+          },
+          {
+           salerno: "NJ223",
+           truename: "唐巍",
+           storeId: "627",
+           storeName: "南京公司光华门店"
+          }
+         ]
+        }
+        
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| salerno       | String    | 门店员工工号 |
+| truename       | String    | 门店员工姓名 |
+| storeId      | String    | 门店Id |
+| storeName       | String    | 门店名称 |
 
 
 
