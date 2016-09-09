@@ -1284,7 +1284,7 @@ POST
 | lpGoodid         | String    | 优惠券id |
 | discount       | String    | 打折数 |
 | lastTime       | String    | 礼券得到时间 |
-| name       | String    | 礼券名 |
+| name       | String    | 礼券名称 |
 | status       | String    | 礼券状态 |
 | mode       | String    | 礼券说明 |
 
