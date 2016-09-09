@@ -795,79 +795,79 @@ POST
         {"code":"400","info":"error","data":""}
         
         {
-         code: "200",
-         info: "success",
-         data: 
+         "code": "200",
+         "info": "success",
+         "data": 
          [
           {
-           storeId: "629",
-           city: "南京",
-           trueName: "王庆霞",
-           phone: "15062285736",
-           address: "白下区光华路2号石林家居广场10号",
-           storeName: "南京公司光华门店",
-           userType: "2",
-           salerno: "NJ214"
+           "storeId": "629",
+           "city": "南京",
+           "trueName": "王庆霞",
+           "phone": "15062285736",
+           "address": "白下区光华路2号石林家居广场10号",
+           "storeName": "南京公司光华门店",
+           "userType": "2",
+           "salerno": "NJ214"
           },
           {
-           storeId: "242",
-           city: "南京",
-           trueName: "田艳",
-           phone: "15358106566",
-           address: "雨花区卡子门大街88号石林家乐家",
-           storeName: "南京公司家乐家店",
-           userType: "2",
-           salerno: "NJ155"
+           "storeId": "242",
+           "city": "南京",
+           "trueName": "田艳",
+           "phone": "15358106566",
+           "address": "雨花区卡子门大街88号石林家乐家",
+           "storeName": "南京公司家乐家店",
+           "userType": "2",
+           "salerno": "NJ155"
           },
           {
-           storeId: "540",
-           city: "南京",
-           trueName: "王静",
-           phone: "15358106880",
-           address: "大桥北路48号弘阳广场弘阳家居A2馆2315号",
-           storeName: "南京公司桥北店",
-           userType: "2",
-           salerno: "NJ150"
+           "storeId": "540",
+           "city": "南京",
+           "trueName": "王静",
+           "phone": "15358106880",
+           "address": "大桥北路48号弘阳广场弘阳家居A2馆2315号",
+           "storeName": "南京公司桥北店",
+           "userType": "2",
+           "salerno": "NJ150"
           },
           {
-           storeId: "119",
-           city: "南京",
-           trueName: "经芳",
-           phone: "15358106759",
-           address: "雨花区卡子门红星美凯龙负一楼F8381号",
-           storeName: "南京公司红星店",
-           userType: "2",
-           salerno: "NJ020"
+           "storeId": "119",
+           "city": "南京",
+           "trueName": "经芳",
+           "phone": "15358106759",
+           "address": "雨花区卡子门红星美凯龙负一楼F8381号",
+           "storeName": "南京公司红星店",
+           "userType": "2",
+           "salerno": "NJ020"
           },
           {
-           storeId: "635",
-           city: "南京",
-           trueName: "李青青",
-           phone: "13914485566",
-           address: "快特兰汀家居有限公司",
-           storeName: "南京公司达美店",
-           userType: "2",
-           salerno: "NJ205"
+           "storeId": "635",
+           "city": "南京",
+           "trueName": "李青青",
+           "phone": "13914485566",
+           "address": "快特兰汀家居有限公司",
+           "storeName": "南京公司达美店",
+           "userType": "2",
+           "salerno": "NJ205"
           },
           {
-           storeId: "185",
-           city: "南京",
-           trueName: "陈君",
-           phone: "15358106127",
-           address: "江宁区东山镇金宝装饰城精品洁具地板厅2号",
-           storeName: "南京公司金宝店",
-           userType: "2",
-           salerno: "NJ101"
+           "storeId": "185",
+           "city": "南京",
+           "trueName": "陈君",
+           "phone": "15358106127",
+           "address": "江宁区东山镇金宝装饰城精品洁具地板厅2号",
+           "storeName": "南京公司金宝店",
+           "userType": "2",
+           "salerno": "NJ101"
           },
           {
-           storeId: "108",
-           city: "南京",
-           trueName: "徐云",
-           phone: "15358106312",
-           address: "建邺区江东中路80号-1楼B21-23号",
-           storeName: "南京公司金盛店",
-           userType: "2",
-           salerno: "NJ008"
+           "storeId": "108",
+           "city": "南京",
+           "trueName": "徐云",
+           "phone": "15358106312",
+           "address": "建邺区江东中路80号-1楼B21-23号",
+           "storeName": "南京公司金盛店",
+           "userType": "2",
+           "salerno": "NJ008"
           }
          ]
         }
@@ -917,33 +917,33 @@ POST
         {"code":"400","info":"error","data":""}
         
         {
-         code: "200",
-         info: "success",
-         data: 
+         "code": "200",
+         "info": "success",
+         "data": 
          [
           {
-           salerno: "NJ023",
-           truename: "李兰兰",
-           storeId: "122",
-           storeName: "南京公司光华门店"
+           "salerno": "NJ023",
+           "truename": "李兰兰",
+           "storeId": "122",
+           "storeName": "南京公司光华门店"
           },
           {
-           salerno: "NJ214",
-           truename: "王庆霞",
-           storeId: "629",
-           storeName: "南京公司光华门店"
+           "salerno": "NJ214",
+           "truename": "王庆霞",
+           "storeId": "629",
+           "storeName": "南京公司光华门店"
           },
           {
-           salerno: "NJ213",
-           truename: "杨向北",
-           storeId: "628",
-           storeName: "南京公司光华门店"
+           "salerno": "NJ213",
+           "truename": "杨向北",
+           "storeId": "628",
+           "storeName": "南京公司光华门店"
           },
           {
-           salerno: "NJ223",
-           truename: "唐巍",
-           storeId: "627",
-           storeName: "南京公司光华门店"
+           "salerno": "NJ223",
+           "truename": "唐巍",
+           "storeId": "627",
+           "storeName": "南京公司光华门店"
           }
          ]
         }
@@ -957,6 +957,110 @@ POST
 | truename       | String    | 门店员工姓名 |
 | storeId      | String    | 门店Id |
 | storeName       | String    | 门店名称 |
+
+***
+
+## 15.商品分类
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/get_class.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        无
+
+* **请求字段说明**
+
+        无
+
+* **返回字段说明**
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {
+         "code": "200",
+         "info": "success",
+         "data": 
+         [
+          {
+            "id": "1",
+            "name": "橱柜",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "2",
+            "name": "全屋定制",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "64",
+            "name": "五金",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "65",
+            "name": "台面、边型及垫条",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "66",
+            "name": "水槽、龙头",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "67",
+            "name": "净水器",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "68",
+            "name": "厨电",
+            "status": "1",
+           parentid: "0"
+          },
+          {
+            "id": "69",
+            "name": "照明",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "74",
+            "name": "礼品",
+            "status": "1",
+            "parentid": "0"
+          },
+          {
+            "id": "3",
+            "name": "小康美厨",
+            "status": "1",
+            "parentid": "1"
+          }
+         ]
+        }
+        
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| id       | String      | 分类id |
+| name       | String    | 分类名称 |
+| status      | String   | 状态 1启用 0未启用 |
+| parentid       | String    | 商品归属的类的id |
 
 
 
