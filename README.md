@@ -693,13 +693,13 @@ POST
 | uid      | String    | 用户id |
 | goodsstoreid      | String    | 商品id |
 
-* **返回字段说明**
-
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
         
         {code:"200",info:"success","data":""} 
+
+* **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
