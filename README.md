@@ -1170,7 +1170,7 @@ POST
           {
            "id": "2862",
            "goodsname": "名家雅厨_普瑞达A",
-           "picurl": "uploads/1446711418.jpg",
+           "imgurl": "uploads/1446711418.jpg",
            "price": "14999",
            "subtitle": "",
            "buycount": "1"
@@ -1178,7 +1178,7 @@ POST
           {
            "id": "3062",
            "goodsname": "二级过滤净水器-OLO-JS-02",
-           "picurl": "uploads/1446513097.png",
+           "imgurl": "uploads/1446513097.png",
            "price": "1248",
            "subtitle": "配件",
            "buycount": "5"
@@ -1186,7 +1186,7 @@ POST
           {
            "id": "3130",
            "goodsname": "台面边型-LMB07",
-           "picurl": "uploads/1466391728.png",
+           "imgurl": "uploads/1466391728.png",
            "price": "1629",
            "subtitle": "配件",
            "buycount": "1"
@@ -1194,7 +1194,7 @@ POST
           {
            "id": "2991",
            "goodsname": "米箱OLO-MX25",
-           "picurl": "uploads/1446449359.png",
+           "imgurl": "uploads/1446449359.png",
            "price": "1012",
            "subtitle": "配件",
            "buycount": "3"
@@ -1209,7 +1209,7 @@ POST
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | id         | String    | 购物车 |
 | goodsname       | String    | 商品名称 |
-| picurl       | String    | 图片地址 |
+| imgurl       | String    | 图片地址 |
 | price       | String    | 商品价格 |
 | subtitle       | String    | 商品子标题 |
 | buycount       | String    | 购买数量 |
