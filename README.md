@@ -1283,7 +1283,7 @@ POST
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | lpGoodid         | String    | 优惠券id |
 | discount       | String    | 打折数 |
-| lastTime       | String    | 礼券得到时间 |
+| lastTime       | String    | 礼券有效期 |
 | name       | String    | 礼券名称 |
 | status       | String    | 礼券状态 |
 | mode       | String    | 礼券说明 |
