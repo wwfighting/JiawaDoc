@@ -1135,6 +1135,86 @@ POST
 
 
 
+***
+
+## 18.获取用户购物车内容
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/get_shopping_cart.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"224"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户ID |
+
+* **返回字段说明**
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {
+         "code": "200",
+         "info": "success",
+         "data": 
+         [
+          {
+           "id": "2862",
+           "goodsname": "名家雅厨_普瑞达A",
+           "picurl": "uploads/1446711418.jpg",
+           "price": "14999",
+           "subtitle": "",
+           "buycount": "1"
+          },
+          {
+           "id": "3062",
+           "goodsname": "二级过滤净水器-OLO-JS-02",
+           "picurl": "uploads/1446513097.png",
+           "price": "1248",
+           "subtitle": "配件",
+           "buycount": "5"
+          },
+          {
+           "id": "3130",
+           "goodsname": "台面边型-LMB07",
+           "picurl": "uploads/1466391728.png",
+           "price": "1629",
+           "subtitle": "配件",
+           "buycount": "1"
+          },
+          {
+           "id": "2991",
+           "goodsname": "米箱OLO-MX25",
+           "picurl": "uploads/1446449359.png",
+           "price": "1012",
+           "subtitle": "配件",
+           "buycount": "3"
+          }
+         ]
+        }
+        
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| id         | String    | 购物车 |
+| goodsname       | String    | 商品名称 |
+| picurl       | String    | 图片地址 |
+| price       | String    | 商品价格 |
+| subtitle       | String    | 商品子标题 |
+| buycount       | String    | 购买数量 |
+
 
 
 
