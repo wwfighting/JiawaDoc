@@ -1214,7 +1214,6 @@ POST
 | subtitle       | String    | 商品子标题 |
 | buycount       | String    | 购买数量 |
 
-
 ***
 
 ## 19.获取用户礼券信息列表
@@ -1287,6 +1286,105 @@ POST
 | name       | String    | 礼券名称 |
 | status       | String    | 礼券状态 |
 | mode       | String    | 礼券说明 |
+
+***
+
+## 20.获取用户订单列表
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/get_userorder_list.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"213"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户ID |
+
+* **返回字段说明**
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {
+         code: "200",
+         info: "success",
+         data: 
+          [
+           {
+            "erpstatus": "商机单",
+            "subbillid": "99941008",
+            "superbillid": "99901653",
+            "picurl": "uploads/1449555160.png;uploads/1449555275.png;uploads/1449555284.png",
+            "goodsname": "精英悦厨_简爱A",
+            "billprice": "10999",
+            "status": "1",
+            "schedprice": "2000",
+            "color": "diy预约，预约金",
+            "createtime": "2016-02-29 15:23:53",
+            "yyid": "SJ2016022917839",
+            "price": "10999",
+            "buynum": "1"
+           },
+           {
+            "erpstatus": "商机单",
+            "subbillid": "99940960",
+            "superbillid": "99901605",
+            "picurl": "uploads/1449650214.PNG;uploads/1449650223.PNG",
+            "goodsname": "小康美厨_雕刻时光A",
+            "billprice": "6999",
+            "status": "1",
+            "schedprice": "2000",
+            "color": "diy预约，预约金",
+            "createtime": "2016-02-27 18:31:17",
+            "yyid": "SJ2016022717633",
+            "price": "6999",
+            "buynum": "1"
+           },
+           {
+            "erpstatus": "商机单",
+            "subbillid": "99940894",
+            "superbillid": "99901539",
+            "picurl": "uploads/1449555160.png;uploads/1449555275.png;uploads/1449555284.png",
+            "goodsname": "精英悦厨_简爱A",
+            "billprice": "10999",
+            "status": "1",
+            "schedprice": "2000",
+            "color": "diy预约，预约金",
+            "createtime": "2016-02-26 11:25:52",
+            "yyid": "SJ2016022617561",
+            "price": "10999",
+            "buynum": "1"
+           }
+         ]
+        }
+        
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| erpstatus         | String    | "" |
+| subbillid       | String    | 子订单id |
+| superbillid       | String    | 主订单id |
+| goodsname       | String    | 商品名称 |
+| billprice       | String    | 订单总价 |
+| status       | String    | 订单状态 0：未付款 1：已预约 2：已付款 3：配送中 4：待评价 5：已完成 6：设计师已测量 -1：订单取消 |
+| schedprice       | String    | 预约总价 |
+| color       | String    | "" |
+| createtime       | String    | 订单创建时间 |
+| yyid       | String    | "" |
+| price       | String    | 商品价格 |
+| buynum       | String    | 购买数量 |
 
 
 
