@@ -529,7 +529,8 @@ POST
                   "subtitle":"",
                   "price_old":"20996",
                   "price":"10999",
-                  "price_old1":"74985","price1":"28999",
+                  "price_old1":"74985",
+                  "price1":"28999",
                   "guide":"3-10\u7c73\u5730\u67dc + 3-10\u7c73\u53f0\u9762 + 1-5\u7c73\u540a\u67dc",
                   "tag":"\u4e1d\u4e3d\u5361B;15,17,18,19,20;4,6,19,20,22,23,84",
                   "ordermoney":2000,"ordercount":121
