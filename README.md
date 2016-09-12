@@ -766,8 +766,6 @@ POST
 |:--------:|:---------:|:---------:|
 | uid      | String    | 用户ID |
 
-* **返回字段说明**
-
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
@@ -788,6 +786,7 @@ POST
          ]
         }
         
+* **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -822,13 +821,13 @@ POST
 |:--------:|:---------:|:---------:|
 | aid      | String    | 地址ID |
 
-* **返回字段说明**
-
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
         
         {code:"200",info:"success","data":""} 
+        
+* **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -859,8 +858,6 @@ POST
 | cityName  | String    | 城市名 |
 | storeName | String    | 门店名 |
 | action    | String    | 获取数据的对象 store：门店信息 staff：门店员工信息 |
-
-* **返回字段说明**
 
 * **返回结果**
 
@@ -944,6 +941,7 @@ POST
          ]
         }
         
+* **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -982,8 +980,6 @@ POST
 | storeName | String    | 门店名 |
 | action    | String    | 获取数据的对象 store：门店信息 staff：门店员工信息 |
 
-* **返回字段说明**
-
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
@@ -1020,6 +1016,7 @@ POST
          ]
         }
         
+ * **返回字段说明**       
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -1049,8 +1046,6 @@ POST
 * **请求字段说明**
 
         无
-
-* **返回字段说明**
 
 * **返回结果**
 
@@ -1123,7 +1118,8 @@ POST
           }
          ]
         }
-        
+
+* **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -1155,8 +1151,6 @@ POST
 | 请求字段  | 字段类型   | 字段说明  |
 |:--------:|:---------:|:---------:|
 | uid      | String    | 用户ID |
-
-* **返回字段说明**
 
 * **返回结果**
 
@@ -1202,6 +1196,7 @@ POST
          ]
         }
         
+* **返回字段说明**       
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -1236,8 +1231,6 @@ POST
 |:--------:|:---------:|:---------:|
 | uid      | String    | 用户ID |
 | status      | String    | 优惠券状态，1：未使用 2：已使用 3：已过期 |
-
-* **返回字段说明**
 
 * **返回结果**
 
@@ -1275,6 +1268,7 @@ POST
          ]
         }
         
+* **返回字段说明**       
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -1309,8 +1303,6 @@ POST
 |:--------:|:---------:|:---------:|
 | uid      | String    | 用户ID |
 
-* **返回字段说明**
-
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
@@ -1367,7 +1359,8 @@ POST
            }
          ]
         }
-        
+
+* **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
@@ -1392,7 +1385,7 @@ POST
 
 * **URL:**
 
-http://192.168.1.54/test/jvawa/get_userorder_list.php
+http://192.168.1.54/test/jvawa/get_activity_list.php
 
 * **HTTP请求方式**
 
@@ -1400,90 +1393,67 @@ POST
 
 * **请求参数**
 
-        {"uid":"213"}
+        无
 
 * **请求字段说明**
-
-| 请求字段  | 字段类型   | 字段说明  |
-|:--------:|:---------:|:---------:|
-| uid      | String    | 用户ID |
-
-* **返回字段说明**
+        无
 
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
         
         {
-         code: "200",
-         info: "success",
-         data: 
+         "code": "200",
+         "info": "success",
+         "data": 
           [
            {
-            "erpstatus": "商机单",
-            "subbillid": "99941008",
-            "superbillid": "99901653",
-            "picurl": "uploads/1449555160.png;uploads/1449555275.png;uploads/1449555284.png",
-            "goodsname": "精英悦厨_简爱A",
-            "billprice": "10999",
+            "id": "29",
+            "type": "1",
+            "title": "6月活动",
+            "imgurl": "uploads/1464942882.jpg",
+            "href": "http://www.jvawa.com/new/game/AprilSpecial/special.php",
+            "sort": "1",
             "status": "1",
-            "schedprice": "2000",
-            "color": "diy预约，预约金",
-            "createtime": "2016-02-29 15:23:53",
-            "yyid": "SJ2016022917839",
-            "price": "10999",
-            "buynum": "1"
+            "createtime": "2016-06-03 16:22:32"
            },
            {
-            "erpstatus": "商机单",
-            "subbillid": "99940960",
-            "superbillid": "99901605",
-            "picurl": "uploads/1449650214.PNG;uploads/1449650223.PNG",
-            "goodsname": "小康美厨_雕刻时光A",
-            "billprice": "6999",
-            "status": "1",
-            "schedprice": "2000",
-            "color": "diy预约，预约金",
-            "createtime": "2016-02-27 18:31:17",
-            "yyid": "SJ2016022717633",
-            "price": "6999",
-            "buynum": "1"
+            "id": "20",
+            "type": "1",
+            "title": "大转盘",
+            "imgurl": "uploads/1452045879.jpg",
+            "href": "#",
+            "sort": "2",
+            "status": "0",
+            "createtime": "2015-10-13 14:17:19"
            },
            {
-            "erpstatus": "商机单",
-            "subbillid": "99940894",
-            "superbillid": "99901539",
-            "picurl": "uploads/1449555160.png;uploads/1449555275.png;uploads/1449555284.png",
-            "goodsname": "精英悦厨_简爱A",
-            "billprice": "10999",
-            "status": "1",
-            "schedprice": "2000",
-            "color": "diy预约，预约金",
-            "createtime": "2016-02-26 11:25:52",
-            "yyid": "SJ2016022617561",
-            "price": "10999",
-            "buynum": "1"
+            "id": "22",
+            "type": "1",
+            "title": "双十一活动",
+            "imgurl": "uploads/1446538960.jpg",
+            "href": "#",
+            "sort": "3",
+            "status": "0",
+            "createtime": "2015-11-02 10:36:06"
            }
-         ]
+          ]
         }
         
+* **返回字段说明**    
 
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
 | code       | String    | 200：成功 400：失败 |
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
-| erpstatus         | String    | "" |
-| subbillid       | String    | 子订单id |
-| superbillid       | String    | 主订单id |
-| goodsname       | String    | 商品名称 |
-| billprice       | String    | 订单总价 |
-| status       | String    | 订单状态 0：未付款 1：已预约 2：已付款 3：配送中 4：待评价 5：已完成 6：设计师已测量 -1：订单取消 |
-| schedprice       | String    | 预约总价 |
-| color       | String    | "" |
-| createtime       | String    | 订单创建时间 |
-| yyid       | String    | "" |
-| price       | String    | 商品价格 |
-| buynum       | String    | 购买数量 |
+| id         | String    | 活动id |
+| type       | String    | 位置类型 |
+| title       | String    | 标题 |
+| imgurl       | String    | 图片地址 |
+| href       | String    | 点击图片跳转地址  #:不可跳转|
+| status       | String | 活动状态 0：往期活动 1：正在进行|
+| createtime       | String    | 活动创建时间 |
+
 
 
 
