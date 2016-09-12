@@ -1451,7 +1451,7 @@ POST
 | type       | String    | 位置类型 |
 | title       | String    | 标题 |
 | imgurl       | String    | 图片地址 |
-| href       | String    | 点击图片跳转地址  #:不可跳转|
+| href       | String    | 点击图片跳转地址  #：不可跳转|
 | status       | String | 活动状态 0：往期活动 1：正在进行|
 | createtime       | String    | 活动创建时间 |
 
