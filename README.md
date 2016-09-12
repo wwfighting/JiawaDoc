@@ -771,9 +771,9 @@ POST
         {"code":"400","info":"error","data":""}
         
         {
-         code: "200",
-         info: "success",
-         data: 
+         "code": "200",
+         "info": "success",
+         "data": 
          [
           {
             "aid": "786", 
