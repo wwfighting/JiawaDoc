@@ -1455,6 +1455,136 @@ POST
 | status       | String | 活动状态 0：往期活动 1：正在进行|
 | createtime       | String    | 活动创建时间 |
 
+***
+
+## 22. 生成配件订单
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/generate_parts_order.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"2502", "billprice":"5000", "schedprice":"2000", "storeid":"122",
+          "phone":"13770936421", "receivername":"焦哥", "receiveaddress":"南京市九龙湖企业园阿米巴",
+          "isperfe":"0", "salerno":"NJ023", "goodsid":"2789", "picurl":"uploads/1449650214.PNG",
+          "num":"1", "desingerprice":"0",
+        }
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户ID |
+| billprice      | String    | 总价 |
+| schedprice      | String    | 预约总价 |
+| storeid      | String    | 门店id |
+| phone      | String    | 联系号码 |
+| receivername      | String    | 收件人姓名 |
+| receiveaddress      | String    | 收件人地址 |
+| isperfe      | String    | 是否活动价格(0：否 1：是) |
+| salerno      | String    | 店员工号 |
+| goodsid      | String    | 商品编号 |
+| picurl      | String    | 图片地址 |
+| num      | String    | 购买数量 |
+| desingerprice      | String    | 修改后的价格 客户端目前默认传 0 即可 |
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {
+          "code": "200",
+          "info": "success",
+          "data": 
+          {
+            "superbillid": 99902818,
+            "price": "5000",
+            "allSchedprice": 200000,
+            "goodsName": "小康美厨_雕刻时光A",
+            "imgurl": "uploads/1449650214.PNG"
+          }
+        }
+         
+        
+* **返回字段说明**    
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| superbillid       | int    | 订单号 |
+| price       | String    | 单价 |
+| allSchedprice       | int    | 总价 |
+| goodsName       | String    | 商品名 |
+| imgurl       | String    | 图片地址 |
+
+***
+
+## 23. 生成主件(橱柜之类)订单
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/generate_main_order.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"213", "billprice":"", "schedprice":"", "storeid":"",
+          "phone":"", "receivername":"", "receiveaddress":"",
+          "isperfe":"", "salerno":"", "goodsid":"", "picurl":"",
+          "num":"", "desingerprice":"", "colorid":"",
+          "taimianid":"", "doorid":"", "mishu1":"", 
+          "mishu2":"", "huodongneirong":"", "kehuyaoqiu":"", 
+          "lingjifeixiang":"","beizhu":"", "bzpj":"", "diypj":"",
+          "goodsname":"", "FBuyInfo":"", "cityName":""
+        }
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户ID |
+| billprice      | String    | 总价 |
+| schedprice      | String    | 预约总价 |
+| storeid      | String    | 门店id |
+| phone      | String    | 联系号码 |
+| receivername      | String    | 收件人姓名 |
+| receiveaddress      | String    | 收件人地址 |
+| isperfe      | String    | 是否活动价格(0：否 1：是) |
+| salerno      | String    | 店员工号 |
+| goodsid      | String    | 商品编号 |
+| picurl      | String    | 图片地址 |
+| num      | String    | 购买数量 |
+| desingerprice      | String    | 修改后的价格 客户端目前默认传 0 即可 |
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {"code":"200","info":"success","data":""}
+         
+        
+* **返回字段说明**    
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| superbillid       | int    | 订单号 |
+| price       | String    | 单价 |
+| allSchedprice       | int    | 总价 |
+| goodsName       | String    | 商品名 |
+| imgurl       | String    | 图片地址 |
+
+
 
 
 
