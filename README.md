@@ -744,7 +744,7 @@ POST
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | data       | Object    | null |
 
-## 13. 编辑用户配送信息(添加、更新、删除)
+## 13. 编辑用户配送信息(添加、更新、删除、设置默认地址 )
 
 * **URL:**
 
@@ -761,6 +761,8 @@ POST
           更新：{"uid":"2502","aid":"786""reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"0","action":"update"}
           
           删除：{"uid":"2502","aid":"786","action":"delete"}
+          
+          只设置默认地址：{"uid":"2502","aid":"786","isDefault":"1","action":"setDefault"}
 
 * **请求字段说明**
 
