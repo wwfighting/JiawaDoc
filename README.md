@@ -756,9 +756,9 @@ POST
 
 * **请求参数**
 
-          添加：{"uid":"2502","reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"1",       "action":"add"}
+          添加：{"uid":"2502","reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"1","action":"add"}
           
-          更新：{"uid":"2502","aid":"786""reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDe       fault":"0","action":"update"}
+          更新：{"uid":"2502","aid":"786""reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"0","action":"update"}
           
           删除：{"uid":"2502","aid":"786","action":"delete"}
 
