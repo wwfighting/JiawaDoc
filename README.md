@@ -744,11 +744,11 @@ POST
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | data       | Object    | null |
 
-## 13.添加用户配送信息(地址)
+## 13. 编辑用户配送信息(添加、更新、删除)
 
 * **URL:**
 
-http://192.168.1.54/test/jvawa/add_address.php
+http://192.168.1.54/test/jvawa/edit_address.php
 
 * **HTTP请求方式**
 
@@ -756,7 +756,11 @@ POST
 
 * **请求参数**
 
-        {"uid":"2502","reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座"}
+          添加：{"uid":"2502","reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"1",       "action":"add"}
+          
+          更新：{"uid":"2502","aid":"786""reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDe       fault":"0","action":"update"}
+          
+          删除：{"uid":"2502","aid":"786","action":"delete"}
 
 * **请求字段说明**
 
@@ -766,6 +770,8 @@ POST
 | reciverName      | String    | 收货人姓名 |
 | phoneNum   | String    | 收货人手机号 |
 | address   | String    | 收货人地址 |
+| isDefault   | String    | 是否设为默认地址 1：是 0：否 |
+| action   | String    |  编辑方式 add：添加 update：更新 delete：删除      |
 
 * **返回结果**
 
