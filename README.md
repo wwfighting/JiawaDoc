@@ -769,6 +769,7 @@ POST
 | 请求字段  | 字段类型   | 字段说明  |
 |:--------:|:---------:|:---------:|
 | uid      | String    | 用户ID |
+| aid      | String    | 地址ID |
 | reciverName      | String    | 收货人姓名 |
 | phoneNum   | String    | 收货人手机号 |
 | address   | String    | 收货人地址 |
