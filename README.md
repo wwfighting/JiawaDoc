@@ -1552,7 +1552,7 @@ POST
 * **请求参数**
 
         {"uid":"213", "billprice":"", "schedprice":"", "storeid":"",
-          "phone":"", "receivername":"", "receiveaddress":"",
+          "phone":"", "receivername":"", "receiveraddress":"",
           "isperfe":"", "salerno":"", "goodsid":"", "picurl":"",
           "num":"", "desingerprice":"", "colorid":"",
           "taimianid":"", "doorid":"", "mishu1":"", 
@@ -1571,7 +1571,7 @@ POST
 | storeid      | String    | 门店id |
 | phone      | String    | 联系号码 |
 | receivername      | String    | 收件人姓名 |
-| receiveaddress      | String    | 收件人地址 |
+| receiveraddress      | String    | 收件人地址 |
 | isperfe      | String    | 是否活动价格(0：否 1：是) |
 | salerno      | String    | 店员工号 |
 | goodsid      | String    | 商品编号 |
