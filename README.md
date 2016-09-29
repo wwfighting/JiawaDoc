@@ -1583,7 +1583,17 @@ POST
 
         {"code":"400","info":"error","data":""}
         
-        {"code":"200","info":"success","data":""}
+        {
+         "code": "200",
+         "info": "success",
+         "data": 
+          {
+            "superbillid": 99902840,
+            "allSchedprice": 100,
+            "goodsName": "尚品魅厨_诺特",
+            "imgurl": "uploads/1444890402.jpg;"
+          }
+        }
          
         
 * **返回字段说明**    
@@ -1593,7 +1603,6 @@ POST
 | code       | String    | 200：成功 400：失败 |
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | superbillid       | int    | 订单号 |
-| price       | String    | 单价 |
 | allSchedprice       | int    | 总价 |
 | goodsName       | String    | 商品名 |
 | imgurl       | String    | 图片地址 |
