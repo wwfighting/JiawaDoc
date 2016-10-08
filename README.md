@@ -1484,7 +1484,7 @@ POST
 * **请求参数**
 
         {"uid":"2502", "billprice":"5000", "schedprice":"2000", "storeid":"122",
-          "phone":"13770936421", "receivername":"焦哥", "receiveaddress":"南京市九龙湖企业园阿米巴",
+          "phone":"13770936421", "receivername":"焦哥", "receiveraddress":"南京市九龙湖企业园阿米巴",
           "isperfe":"0", "salerno":"NJ023", "goodsid":"2789", "picurl":"uploads/1449650214.PNG",
           "num":"1", "desingerprice":"0",
         }
@@ -1499,7 +1499,7 @@ POST
 | storeid      | String    | 门店id |
 | phone      | String    | 联系号码 |
 | receivername      | String    | 收件人姓名 |
-| receiveaddress      | String    | 收件人地址 |
+| receiveraddress      | String    | 收件人地址 |
 | isperfe      | String    | 是否活动价格(0：否 1：是) |
 | salerno      | String    | 店员工号 |
 | goodsid      | String    | 商品编号 |
