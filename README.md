@@ -1214,7 +1214,7 @@ POST
 |:----------:|:---------:|:---------:|
 | code       | String    | 200：成功 400：失败 |
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
-| id         | String    | 购物车 |
+| id         | String    | 商品Id |
 | goodsname       | String    | 商品名称 |
 | imgurl       | String    | 图片地址 |
 | price       | String    | 商品价格 |
@@ -1558,7 +1558,7 @@ POST
           "taimianid":"", "doorid":"", "mishu1":"", 
           "mishu2":"", "huodongneirong":"", "kehuyaoqiu":"", 
           "lingjifeixiang":"","beizhu":"", "bzpj":"", "diypj":"",
-          "goodsname":"", "FBuyInfo":"", "cityName":""
+          "goodsname":"", "cityName":""
         }
 
 * **请求字段说明**
