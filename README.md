@@ -1558,7 +1558,7 @@ POST
           "taimianid":"", "doorid":"", "mishu1":"", 
           "mishu2":"", "huodongneirong":"", "kehuyaoqiu":"", 
           "lingjifeixiang":"","beizhu":"", "bzpj":"", "diypj":"",
-          "goodsname":"", "cityName":""
+          "goodsname":"", "cityName":"", "color":""
         }
 
 * **请求字段说明**
@@ -1577,6 +1577,7 @@ POST
 | goodsid      | String    | 商品编号 |
 | picurl      | String    | 图片地址 |
 | num      | String    | 购买数量 |
+| color      | String    | 支付方式 |
 | desingerprice      | String    | 修改后的价格 客户端目前默认传 0 即可 |
 
 * **返回结果**
