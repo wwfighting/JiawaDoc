@@ -1608,7 +1608,6 @@ POST
 | goodsName       | String    | 商品名 |
 | imgurl       | String    | 图片地址 |
 
-
 ## 24.修改密码
 
 * **URL:**
@@ -1642,3 +1641,39 @@ POST
 | code       | String    | 200：成功 400：失败 |
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | data       | String    | "" |
+
+## 25.保存已支付订单
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/save_bill.php
+
+* **HTTP请求方式**
+
+POST
+
+        {"tradeNo":"138", "superBillId":"*******", "price":"2000", "payType":"微信支付"}
+    
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| tradeNo      | String    | BeeCloud(微信或支付宝或其他)返回的支付单号 |
+| superBillId      | String    | 商品订单号 |
+| price      | String    | 支付金额 |
+| payType      | String    | 支付方式，(微信支付或支付宝支付或其他 由BeeCloud返回 |
+
+* **返回结果**
+
+       {"code": "400","info": "生成支付订单失败！","data": ""}
+      
+       {"code": "200","info": "success","data": ""}
+
+* **返回字段说明**    
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| data       | String    | "" |
+
