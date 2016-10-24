@@ -1746,3 +1746,42 @@ POST
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | data       | String    | "" |
 
+***
+
+## 27.删除用户订单
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/delete_order.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"2540","superbillid":"99902940", "subbillid":"99942635"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户id |
+| superbillid      | String    | 主订单id |
+| subbillid      | String    | 子订单id |
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+        
+        {code:"200",info:"success","data":""} 
+
+* **返回字段说明**
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| data       | Object    | null |
+
+
