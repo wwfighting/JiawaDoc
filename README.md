@@ -52,8 +52,7 @@ POST
             "phone":"15358106068",
             "wx_openid":"o78U2v6Zh5RtUjIJwKPZFYYKMWnI",
             "status":"100",
-            "createtime":"2015-09-2701:21:34",
-            "headImg":"http://wx.qlogo.cn/mmopen/ajNVdqHZLLAq8171DGiaEfaHdPDetF5XavppaYOicZ7r1mPHNhnkVlZfw4pcsLdAEkjwWsSjJvPuVXoA6rAHEHibw/0",
+            "createtime":"2015-09-2701:21:34",                                          "headImg":"http://wx.qlogo.cn/mmopen/ajNVdqHZLLAq8171DGiaEfaHdPDetF5XavppaYOicZ7r1mPHNhnkVlZfw4pcsLdAEkjwWsSjJvPuVXoA6rAHEHibw/0",
             "area":"",
             "credit":"1",
             "lasttime":"2016-05-30 12:52:27",
@@ -1825,7 +1824,6 @@ POST
 | info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
 | data       | String    | "" |
 
-
 ***
 
 ## 29.生成购物车订单
@@ -1857,12 +1855,24 @@ POST
 | schedprice      | String    | 预约总价，此处不必传所有商品总价 |
 | city      | String    | 城市 |
 
+注：一次只能选择一件（橱柜或全屋商品）！
+
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
 
-        {code:"200",info:"success","data":""}
-
+        {
+          "code": "200",
+          "info": "success",
+          "data":
+          {
+            "superbillid": 99902818,
+            "price": "5000",
+            "allSchedprice": 200000,
+            "goodsName": "波尔多,垃圾桶，水槽"
+            "imgurl": "uploads/1449650214.PNG"
+          }
+        }
 * **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
