@@ -63,7 +63,7 @@ POST
             "email":"null"
             }
         }
-        
+
 * **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -358,7 +358,7 @@ POST
 
 ***
 
-## 7.重置密码 
+## 7.重置密码
 
 * **URL:**
 
@@ -550,7 +550,7 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
            "code":"200",
            "info":"success",
@@ -684,7 +684,7 @@ POST
 
 * **请求参数**
 
-        {"uid":"2502","gid":"2789","action":"add"}
+        {"uid":"2502","gid":"2789","action":"add","mode":"0","num":"1"}
 
 * **请求字段说明**
 
@@ -693,13 +693,15 @@ POST
 | uid      | String    | 用户ID |
 | gid      | String    | 商品ID |
 | action   | String    | num：获得购物车中商品个数 add：添加到购物车 |
+| mode     | String    | 添加到购物车的物品类型，0：橱柜或全屋定制，1：配件 |
+| num      | String    | 购买配件的数量 |
 
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {"code":"200","info":"success","data":""}
-        
+
 * **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -733,8 +735,8 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
-        {code:"200",info:"success","data":""} 
+
+        {code:"200",info:"success","data":""}
 
 * **返回字段说明**
 
@@ -757,11 +759,11 @@ POST
 * **请求参数**
 
           添加：{"uid":"2502","reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"1","action":"add"}
-          
+
           更新：{"uid":"2502","aid":"786""reciverName":"小明","phoneNum":"13770963698","address":"南京市江宁区九龙湖企业园B1座","isDefault":"0","action":"update"}
-          
+
           删除：{"uid":"2502","aid":"786","action":"delete"}
-          
+
           只设置默认地址：{"uid":"2502","aid":"786","isDefault":"1","action":"setDefault"}
 
 * **请求字段说明**
@@ -779,11 +781,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {"code":"200","info":"success","data":""}
-        
+
 * **返回字段说明**
- 
+
 | 返回值字段 | 字段类型  | 字段说明  |
 |:----------:|:---------:|:---------:|
 | code       | String    | 200：成功 400：失败 |
@@ -814,14 +816,14 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
          [
           {
-            "aid": "786", 
+            "aid": "786",
             "receivername": "焦雁盛",
             "phone": "8451856969",
             "isdefault": "1",
@@ -830,7 +832,7 @@ POST
           }
          ]
         }
-        
+
 * **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -871,11 +873,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
          [
           {
            "storeId": "629",
@@ -949,7 +951,7 @@ POST
           }
          ]
         }
-        
+
 * **返回字段说明**
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -992,11 +994,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
          [
           {
            "salerno": "NJ023",
@@ -1024,7 +1026,7 @@ POST
           }
          ]
         }
-        
+
  * **返回字段说明**       
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1062,11 +1064,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
          [
           {
             "id": "1",
@@ -1167,11 +1169,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
          [
           {
            "id": "2862",
@@ -1207,7 +1209,7 @@ POST
           }
          ]
         }
-        
+
 * **返回字段说明**       
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1247,11 +1249,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
          [
           {
            "lpGoodid": "3215",
@@ -1279,7 +1281,7 @@ POST
           }
          ]
         }
-        
+
 * **返回字段说明**       
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1318,11 +1320,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          code: "200",
          info: "success",
-         data: 
+         data:
           [
            {
             "erpstatus": "商机单",
@@ -1416,11 +1418,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
           [
            {
             "id": "29",
@@ -1454,7 +1456,7 @@ POST
            }
           ]
         }
-        
+
 * **返回字段说明**    
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1510,11 +1512,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
           "code": "200",
           "info": "success",
-          "data": 
+          "data":
           {
             "superbillid": 99902818,
             "price": "5000",
@@ -1523,8 +1525,8 @@ POST
             "imgurl": "uploads/1449650214.PNG"
           }
         }
-         
-        
+
+
 * **返回字段说明**    
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1555,8 +1557,8 @@ POST
           "phone":"", "receivername":"", "receiveraddress":"",
           "isperfe":"", "salerno":"", "goodsid":"", "picurl":"",
           "num":"", "desingerprice":"", "colorid":"",
-          "taimianid":"", "doorid":"", "mishu1":"", 
-          "mishu2":"", "huodongneirong":"", "kehuyaoqiu":"", 
+          "taimianid":"", "doorid":"", "mishu1":"",
+          "mishu2":"", "huodongneirong":"", "kehuyaoqiu":"",
           "lingjifeixiang":"","beizhu":"", "bzpj":"", "diypj":"",
           "goodsname":"", "cityName":"", "color":""
         }
@@ -1583,11 +1585,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
          "code": "200",
          "info": "success",
-         "data": 
+         "data":
           {
             "superbillid": 99902840,
             "allSchedprice": 100,
@@ -1595,8 +1597,8 @@ POST
             "imgurl": "uploads/1444890402.jpg;"
           }
         }
-         
-        
+
+
 * **返回字段说明**    
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1648,11 +1650,11 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
+
         {
           "code": "200",
           "info": "success",
-          "data": 
+          "data":
           {
             "superbillid": 99902818,
             "price": "5000",
@@ -1661,8 +1663,8 @@ POST
             "imgurl": "uploads/1449650214.PNG"
           }
         }
-         
-        
+
+
 * **返回字段说明**    
 
 | 返回值字段 | 字段类型  | 字段说明  |
@@ -1688,7 +1690,7 @@ http://192.168.1.54/test/jvawa/change_pwd.php
 POST
 
     {"uid":"138", "orgPwd":"*******", "newPwd":"********"}
-    
+
 * **请求字段说明**
 
 | 请求字段  | 字段类型   | 字段说明  |
@@ -1700,7 +1702,7 @@ POST
 * **返回结果**
 
         {"code": "400","info": "输入的旧密码有误！","data": ""}
-      
+
         {"code": "200","info": "新密码设置完成！","data": ""}
 
 * **返回字段说明**    
@@ -1722,7 +1724,7 @@ http://192.168.1.54/test/jvawa/save_bill.php
 POST
 
         {"tradeNo":"138", "superBillId":"*******", "price":"2000", "payType":"微信支付"}
-    
+
 * **请求字段说明**
 
 | 请求字段  | 字段类型   | 字段说明  |
@@ -1735,7 +1737,7 @@ POST
 * **返回结果**
 
        {"code": "400","info": "生成支付订单失败！","data": ""}
-      
+
        {"code": "200","info": "success","data": ""}
 
 * **返回字段说明**    
@@ -1773,8 +1775,47 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
-        {code:"200",info:"success","data":""} 
+
+        {code:"200",info:"success","data":""}
+
+* **返回字段说明**
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| data       | String    | "" |
+
+***
+
+## 28.增减购物车配件的数量
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/shop_buycount.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"2540", "id":"****", "buyCount":"4"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户id |
+| id       | String    | 购物车列表返回的id|
+| buyCount      | String    | 购买的数量 |
+
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+
+        {code:"200",info:"success","data":""}
 
 * **返回字段说明**
 
@@ -1785,3 +1826,47 @@ POST
 | data       | String    | "" |
 
 
+***
+
+## 29.生成购物车订单
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/generate_shoppingcart_order.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"2540", "payId":"", "phone":"", "receiverAddress":"", "receiverName":"",
+         "salerno":"", "storeId":"", "schedprice":"", "city":""}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户id |
+| payId      | String    | 购物车的gid，如果是多个商品购买，那么payId为多个购物车gid拼接而成，且用","逗号分割 |
+| phone      | String    | 收货人手机号 |
+| receiverAddress      | String    | 收货人地址 |
+| receiverName      | String    | 收货人姓名 |
+| salerno      | String    | 店员工号 |
+| storeId      | String    | 门店Id |
+| schedprice      | String    | 预约总价，此处不必传所有商品总价 |
+| city      | String    | 城市 |
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+
+        {code:"200",info:"success","data":""}
+
+* **返回字段说明**
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| data       | String    | "" |
