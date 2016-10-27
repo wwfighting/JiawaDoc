@@ -1869,7 +1869,7 @@ POST
             "superbillid": 99902818,
             "price": "5000",
             "allSchedprice": 200000,
-            "goodsName": "波尔多,垃圾桶，水槽"
+            "goodsName": "波尔多,垃圾桶,水槽",
             "imgurl": "uploads/1449650214.PNG"
           }
         }
