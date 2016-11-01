@@ -1883,3 +1883,64 @@ POST
 | allSchedprice       | int    | 总价 |
 | goodsName       | String    | 商品名 |
 | imgurl       | String    | 图片地址 |
+
+
+***
+
+## 30.获取用户礼券列表
+
+* **URL:**
+
+http://192.168.1.54/test/jvawa/get_coupons_list.php
+
+* **HTTP请求方式**
+
+POST
+
+* **请求参数**
+
+        {"uid":"213"}
+
+* **请求字段说明**
+
+| 请求字段  | 字段类型   | 字段说明  |
+|:--------:|:---------:|:---------:|
+| uid      | String    | 用户ID |
+| mode     | String    | 礼券状态 mode：1：未使用 2：已使用 3：已过期|
+
+* **返回结果**
+
+        {"code":"400","info":"error","data":""}
+
+        {
+        "code": "200",
+        "info": "success",
+        "data": 
+         [
+          {
+          "lpGoodid": "3215",
+          "discount": "1",
+          "lastTime": "2016-05-31 23:59:59",
+          "name": "JJ61221449112187",
+          "title":"2016双十一活动礼券"
+          "status": "1",
+          "mode": "1、参加12.5-12.27当期活动，缴纳6000元订金后生效，签订合同时使用，一套橱柜产品仅能使用一张奖券。 2、2016新品尝鲜活动价活动不参与本活动（不可使用礼券）。 3、本礼券不可单独使用、折现等其他用途。"
+          }
+         ]
+        }
+
+* **返回字段说明**
+
+| 返回值字段 | 字段类型  | 字段说明  |
+|:----------:|:---------:|:---------:|
+| code       | String    | 200：成功 400：失败 |
+| info       | String    | code为200时显示内容为成功信息，为400时显示内容为错误信息 |
+| lpGoodid         | String    | 礼券id |
+| discount       | String    | "" |
+| lastTime       | String    | 使用时间 |
+| name       | String    | 礼券单号 |
+| title       | String    | 礼券标题 |
+| status       | String    | 礼券状态 1：未使用 2：已使用 3：已过期 |
+| mode       | String    | 礼券使用规则 |
+
+
