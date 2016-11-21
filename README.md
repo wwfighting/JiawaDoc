@@ -2093,8 +2093,7 @@ POST
            {
              "num":"1"
            }
-         }
-         
+         }  
          action为"1"时：
         {
          "code":"200",
@@ -2111,8 +2110,7 @@ POST
             }
            ] 
          }
-         
-         action为"2"时：
+          action为"2"时：
          {"code":"200","info":"success","data":""}
     
 
