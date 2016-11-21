@@ -2084,30 +2084,28 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-         //action为"0"时:
-        {
+        {//action为"0"时
          "code":"200",
          "info":"success",
          "data":{"num":"1"}           
-         }  
-         //action为"1"时:
-        {
+         }          
+        {//action为"1"时
         "code":"200",
         "info":"success",
         "data":
          [
          {
-        "id":"16725"
-        "mode":"3217"
+         "id":"16725"
+         "mode":"3217"
          }
          {
          "id":"16675"
-        "mode":"3219"
+         "mode":"3219"
          }
          ] 
         }
-          //action为"2"时:
-         {"code":"200","info":"success","data":""}
+        //action为"2"时:
+       {"code":"200","info":"success","data":""}
     
 
 * **返回字段说明**
