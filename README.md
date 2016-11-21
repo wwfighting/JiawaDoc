@@ -2096,20 +2096,20 @@ POST
          }  
          action为"1"时：
         {
-         "code":"200",
-         "info":"success",
-         "data":
-           [
-            {
-             "id":"16725"
-             "mode":"3217"
-            }
-            {
-             "id":"16675"
-             "mode":"3219"
-            }
-           ] 
+        "code":"200",
+        "info":"success",
+        "data":
+         [
+         {
+        "id":"16725"
+        "mode":"3217"
          }
+         {
+         "id":"16675"
+        "mode":"3219"
+         }
+         ] 
+        }
           action为"2"时：
          {"code":"200","info":"success","data":""}
     
