@@ -2084,8 +2084,7 @@ POST
 * **返回结果**
 
         {"code":"400","info":"error","data":""}
-        
-         action为"0"时：
+         action为"0"时:
         {
          "code":"200",
          "info":"success",
@@ -2094,7 +2093,7 @@ POST
              "num":"1"
            }
          }  
-         action为"1"时：
+         action为"1"时:
         {
         "code":"200",
         "info":"success",
@@ -2110,7 +2109,7 @@ POST
          }
          ] 
         }
-          action为"2"时：
+          action为"2"时:
          {"code":"200","info":"success","data":""}
     
 
